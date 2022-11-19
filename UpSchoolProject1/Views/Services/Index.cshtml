@@ -1,0 +1,32 @@
+﻿@using UpSchoolProject1.Models.Entities
+@model List<TblServices>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+    int count = 0;
+}
+
+<h2>Hizmetlerim</h2>
+<div class="row">
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Hizmet Adı</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <td>@count</td>
+                <td>@item.Title</td>
+                <td><a href="/Services/DeleteService/@item.ServicesID" class="btn btn-danger">Sil</a></td>
+                <td><a href="#" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+</div>
+<div class="row text-right">
+    <a href="/Services/AddService/" class="btn btn-primary">Yeni Hizmet Ekle</a>
+</div>
