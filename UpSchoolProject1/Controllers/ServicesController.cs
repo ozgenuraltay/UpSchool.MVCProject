@@ -40,5 +40,20 @@ namespace UpSchoolProject1.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public ActionResult UpdateService(int id)
+        {
+            var service = db.TblServices.Find(id);
+            return View(service);
+        }
+         //Metod isimleri aynı olabilir ama hem metod ismi hem de parametreleri aynı olamaz.
+        [HttpPost]
+        public ActionResult UpdateService(TblServices services)
+        {
+            var service = db.TblServices.Find(services.ServicesID);
+            service.Title = services.Title;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

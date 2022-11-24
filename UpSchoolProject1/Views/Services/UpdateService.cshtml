@@ -1,0 +1,14 @@
+﻿@model UpSchoolProject1.Models.Entities.TblServices
+@{
+    ViewBag.Title = "UpdateService";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<form method="post"> @*textboxfor, içinde linq dorguları kullanılabiliyor.*@
+    @Html.HiddenFor(x=>x.ServicesID,new { @class="form-control"})
+    <br/>
+    <label>hizmet Başlığı:</label>
+    @Html.TextBoxFor(x=> x.Title, new { @class = "form-control" })
+    <br/>
+    <button class="btn btn-success">Güncelle</button>
+</form>

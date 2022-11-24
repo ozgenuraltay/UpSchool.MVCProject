@@ -9,6 +9,9 @@
         <EntityTypeShape EntityType="UpSchoolFirstDBModel.TblServices" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="UpSchoolFirstDBModel.TblAdmin" Width="1.5" PointX="3.375" PointY="3.75" />
         <EntityTypeShape EntityType="UpSchoolFirstDBModel.TblServicesFeatures" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="UpSchoolFirstDBModel.TblTestimonial" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UpSchoolFirstDBModel.TblMember" Width="1.5" PointX="5.375" PointY="3.75" />
+        <EntityTypeShape EntityType="UpSchoolFirstDBModel.TblMessage" Width="1.5" PointX="0.75" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
